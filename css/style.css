@@ -6,11 +6,40 @@ body {
   font-family: "Lora", serif;
 }
 
+.titulo {
+  margin-top: 50px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.titulo--fonte {
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.9rem;
+}
+
+.fonte--grande {
+  font-size: 3.2rem;
+}
+
+.fonte--media {
+  font-size: 1.7rem;
+}
+
+.fonte--pequena {
+  font-size: 1.2rem;
+}
+
 .background {
   background-color: #2e2d4c;
   background-image: url(../img/background-foods-v4.png);
   background-attachment: fixed;
   padding: 2px;
+}
+
+.cabecalho {
+  text-align: center;
+  color: #fff;
+  margin: 100px auto;
+  padding: 30px;
 }
 
 .conteudo {
@@ -34,37 +63,17 @@ body {
   margin-right: 20px;
 }
 
-.fonte--media {
-  font-size: 1.7rem;
-}
-
-.fonte--pequena {
-  font-size: 1.2rem;
-}
-
-.titulo {
-  margin-top: 50px;
-  font-family: "Courier New", Courier, monospace;
-}
-
-.titulo--fonte {
-  font-family: "Exo 2", sans-serif;
-  font-size: 1.9rem;
-}
-
-.cabecalho {
-  text-align: center;
-  color: #fff;
-  margin: 100px auto;
-  padding: 30px;
-}
-
 .logo {
   text-align: center;
 }
 
 .logo img {
-  width: 220px;
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.navigation {
+  margin-bottom: 50px;
 }
 
 .navigation li {
@@ -100,7 +109,7 @@ body {
 }
 
 .fotos img {
-  width: 450px;
+  width: 448px;
   height: 240px;
   border-radius: 8px;
   filter: grayscale(0.4);
@@ -138,6 +147,7 @@ body {
   background-color: #1b1a2f;
   color: #fff;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .logotipo {
@@ -158,4 +168,35 @@ body {
   margin-right: 50%;
   margin-top: -50px;
   transform: translateX(50%) rotate(45deg);
+}
+
+/* -- Apenas no mobile */
+@media (max-width: 720px) {
+  body {
+    position: absolute;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .avatar {
+    width: 110px;
+  }
+
+  .fonte--grande {
+    font-size: 2.2rem;
+  }
+
+  .fonte--media {
+    font-size: 1.3rem;
+  }
+  .fonte--pequena {
+    font-size: 1rem;
+  }
+
+  .navigation li {
+    width: 130px;
+    font-size: 1.1rem;
+  }
 }
